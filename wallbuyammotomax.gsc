@@ -3,35 +3,9 @@
 #include maps\mp\zombies\_zm_utility;
 #include maps\mp\zombies\_zm_weapons;
 
-init()
+main()
 {
-    level thread onPlayerConnect();
-}
-
-onPlayerConnect()
-{
-    level endon("game_ended");
-    for(;;)
-    {
-        level waittill("connected", player);
-        player thread onPlayerSpawned();
-    }
-}
-
-onPlayerSpawned()
-{
-    self endon("disconnect");
-    level endon("game_ended");
-    for(;;)
-    {
-        self waittill("spawned_player");
-        if(!isDefined(level.maC1))
-        {
-            wait 5;
-            level.maC1 = "DONE";
-    		replaceFunc(maps\mp\zombies\_zm_weapons::ammo_give,::new_ammo_give);
-        }    
-    }
+	replaceFunc(maps\mp\zombies\_zm_weapons::ammo_give,::new_ammo_give);
 }
 
 new_ammo_give( weapon ) //checked changed to match cerberus output
