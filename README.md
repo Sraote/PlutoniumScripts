@@ -1,4 +1,5 @@
-![20250416075042_call-of-duty-black-ops-II](https://github.com/user-attachments/assets/2180c627-f02e-463a-a95a-7e2fd04b6b45)
+![489417](https://github.com/user-attachments/assets/6af076c1-7960-4005-94ac-9abd8ed10bc1)
+
 
 	Plutonium T6 Server Scripts
 
